@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi - Tema Cyberpunk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Background dengan efek 3D fluid -->
+        <div class="fluid-bg">
+            <canvas id="fluidCanvas"></canvas>
+        </div>
+        
+        <!-- Konten utama dengan struktur rotating -->
+        <div class="main-content">
+            <h1 class="title glitch" data-text="PORTFOLIO DIGITAL">PORTFOLIO DIGITAL</h1>
+            
+            <!-- Struktur rotating dengan foto profil di tengah -->
+            <div class="rotating-structure">
+                <!-- Foto profil di tengah -->
+                <div class="profile-center">
+                    <div class="profile-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Foto Profil">
+                        <div class="profile-glow"></div>
+                    </div>
+                    <div class="profile-name">
+                        <h2>ALEXANDER RAY</h2>
+                        <div class="status-indicator">
+                            <span class="pulse"></span>
+                            <span class="status-text">ONLINE</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Panel informasi yang mengelilingi foto profil -->
+                <div class="info-panel panel-1">
+                    <div class="panel-header">
+                        <i class="fas fa-id-card"></i>
+                        <h3>DATA IDENTITAS</h3>
+                    </div>
+                    <div class="panel-content">
+                        <div class="data-row">
+                            <span class="data-label">Nama Lengkap</span>
+                            <span class="data-value">Alexander Ray</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Kelas</span>
+                            <span class="data-value">XII MIPA 4</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Nomor Absen</span>
+                            <span class="data-value">07</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Alamat</span>
+                            <span class="data-value">Jl. Teknologi No. 42, Magetan</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-panel panel-2">
+                    <div class="panel-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>RIWAYAT PENDIDIKAN</h3>
+                    </div>
+                    <div class="panel-content">
+                        <div class="timeline">
+                            <div class="timeline-item active">
+                                <div class="timeline-year">2022 - Sekarang</div>
+                                <div class="timeline-school">SMA 1 Magetan</div>
+                                <div class="timeline-status">Sedang Dijalani</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2019 - 2022</div>
+                                <div class="timeline-school">SMP 1 Magetan</div>
+                                <div class="timeline-status">Lulus</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-year">2013 - 2019</div>
+                                <div class="timeline-school">SD Muhammadiyah 1 Magetan</div>
+                                <div class="timeline-status">Lulus</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-panel panel-3">
+                    <div class="panel-header">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>HOBI & MINAT</h3>
+                    </div>
+                    <div class="panel-content">
+                        <div class="hobbies">
+                            <div class="hobby-item">
+                                <i class="fas fa-code"></i>
+                                <span>Pemrograman</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Robotika</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-headphones"></i>
+                                <span>Musik Elektronik</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-vr-cardboard"></i>
+                                <span>Virtual Reality</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-gamepad"></i>
+                                <span>Gaming Cyberpunk</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-microchip"></i>
+                                <span>Teknologi Futuristik</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-panel panel-4">
+                    <div class="panel-header">
+                        <i class="fas fa-terminal"></i>
+                        <h3>STATISTIK DIGITAL</h3>
+                    </div>
+                    <div class="panel-content">
+                        <div class="stats">
+                            <div class="stat-item">
+                                <div class="stat-label">Level Programming</div>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 78%"></div>
+                                </div>
+                                <div class="stat-value">78%</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Kemampuan 3D Design</div>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 65%"></div>
+                                </div>
+                                <div class="stat-value">65%</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Pengetahuan Cyber Security</div>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 82%"></div>
+                                </div>
+                                <div class="stat-value">82%</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">Keahlian AI & Machine Learning</div>
+                                <div class="stat-bar">
+                                    <div class="stat-fill" style="width: 70%"></div>
+                                </div>
+                                <div class="stat-value">70%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kontrol rotasi -->
+            <div class="controls">
+                <button id="rotateLeft" class="control-btn">
+                    <i class="fas fa-rotate-left"></i> Putar Kiri
+                </button>
+                <button id="toggleRotation" class="control-btn">
+                    <i class="fas fa-play"></i> Putar Otomatis
+                </button>
+                <button id="rotateRight" class="control-btn">
+                    <i class="fas fa-rotate-right"></i> Putar Kanan
+                </button>
+            </div>
+            
+            <!-- Terminal interaktif -->
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-title">Terminal Sistem - User: Alexander_Ray</div>
+                    <div class="terminal-controls">
+                        <span class="terminal-btn close"></span>
+                        <span class="terminal-btn minimize"></span>
+                        <span class="terminal-btn maximize"></span>
+                    </div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-output">
+                        <p>> System initialized... Welcome to Cyberpunk Profile v2.1</p>
+                        <p>> Loading user data... Complete</p>
+                        <p>> Rendering 3D fluid interface... Complete</p>
+                        <p>> Connection established with central database</p>
+                        <p>> All systems operational. Type 'help' for commands</p>
+                        <p class="blink">> _</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer dengan efek glitch -->
+        <footer class="footer">
+            <div class="footer-text glitch" data-text="CYBERPUNK PROFILE v2.1 • © 2023 DIGITAL REALITY">
+                CYBERPUNK PROFILE v2.1 • © 2023 DIGITAL REALITY
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
